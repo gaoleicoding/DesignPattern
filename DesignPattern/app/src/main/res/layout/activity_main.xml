@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_singleton"
+            style="@style/buttonStyle"
+            android:onClick="skipToDispatch"
+            android:text="单例模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_builder"
+            style="@style/buttonStyle"
+            android:onClick="skipToText"
+            android:text="Builder模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_singleton" />
+
+        <Button
+            android:id="@+id/bt_prototype"
+            style="@style/buttonStyle"
+            android:onClick="skipToViewPager"
+            android:text="原型模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_builder" />
+
+        <Button
+            android:id="@+id/bt_factory"
+            style="@style/buttonStyle"
+            android:onClick="skipToCalculator"
+            android:text="工厂方法模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_prototype" />
+
+        <Button
+            android:id="@+id/bt_abstract_factory"
+            style="@style/buttonStyle"
+            android:onClick="skipToDispatch"
+            android:text="抽象工厂模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_factory" />
+
+        <Button
+            android:id="@+id/bt_strategy"
+            style="@style/buttonStyle"
+            android:onClick="skipToText"
+            android:text="策略模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_abstract_factory" />
+
+        <Button
+            android:id="@+id/bt_state"
+            style="@style/buttonStyle"
+            android:onClick="skipToViewPager"
+            android:text="状态模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_strategy" />
+
+        <Button
+            android:id="@+id/bt_chain"
+            style="@style/buttonStyle"
+            android:onClick="skipToCalculator"
+            android:text="责任链模式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_state" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
