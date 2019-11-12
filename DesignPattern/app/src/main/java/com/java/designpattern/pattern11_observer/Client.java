@@ -1,6 +1,6 @@
 package com.java.designpattern.pattern11_observer;
 
-public class Test {
+public class Client {
     
     public static void main(String[] args) {
         WechatServer server = new WechatServer();

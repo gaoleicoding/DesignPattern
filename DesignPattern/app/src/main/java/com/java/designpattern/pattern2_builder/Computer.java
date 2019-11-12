@@ -12,6 +12,18 @@ public class Computer {
         this.cpu = cpu;
     }
 
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "cpu='" + cpu + '\'' +
+                ", motherboard='" + motherboard + '\'' +
+                ", displayCard='" + displayCard + '\'' +
+                ", ram='" + ram + '\'' +
+                ", disk='" + disk + '\'' +
+                ", power='" + power + '\'' +
+                '}';
+    }
+
     public void setMotherboard(String motherboard) {
         this.motherboard = motherboard;
     }
@@ -39,7 +51,7 @@ public class Computer {
         private String ram;
         private String disk;
         private String power;
-        
+
         public Builder setCpu(String cpu) {
             this.cpu = cpu;
             return this;
@@ -69,10 +81,10 @@ public class Computer {
             this.power = power;
             return this;
         }
-        
+
         public Computer create() {
             Computer computer = new Computer();
-            
+
             if (cpu != null) {
                 computer.setCpu(cpu);
             }
@@ -91,7 +103,7 @@ public class Computer {
             if (power != null) {
                 computer.setPower(power);
             }
-            
+
             return computer;
         }
     }

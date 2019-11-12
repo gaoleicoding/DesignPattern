@@ -1,10 +1,7 @@
 package com.java.designpattern.pattern11_observer2;
 
-import com.java.designpattern.pattern11_observer.Observer;
-import com.java.designpattern.pattern11_observer.User;
-import com.java.designpattern.pattern11_observer.WechatServer;
 
-public class Test {
+public class Client {
     
     public static void main(String[] args) {
         DevTechFrontier devTechFrontier = new DevTechFrontier();
