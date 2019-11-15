@@ -1,4 +1,4 @@
-package pattern23_bridge;
+package com.java.designpattern.pattern23_bridge;
 
 public class UrgencyMessage extends AbstractMessage {
     public UrgencyMessage(MessageImplementor impl) {
