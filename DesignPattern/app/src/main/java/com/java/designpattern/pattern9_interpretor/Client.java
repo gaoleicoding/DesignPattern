@@ -8,13 +8,9 @@ public class Client {
 
         context.setInput("ABC");
 
-        
-
         AbstractExpression expression1 = new TerminalExpression();
 
         expression1.Interpret(context);
-
-        
 
         AbstractExpression expression2 = new NonterminalExpression();
 

@@ -9,8 +9,8 @@ public class Client {
         Handler handler1 = new ConcreteHandler1();
         Handler handler2 = new ConcreteHandler2();
         Handler handler3 = new ConcreteHandler3();
-        handler2.setNextHandler(handler3);
         handler1.setNextHandler(handler2);
+        handler2.setNextHandler(handler3);
         // 处理事件
         System.out.println("--------------Message1");
         handler1.handleMessage(1);
