@@ -5,7 +5,6 @@ package com.java.designpattern.pattern12_memo;
  */
 public class TextUtil {
 
-
     private String content;
 
     /**

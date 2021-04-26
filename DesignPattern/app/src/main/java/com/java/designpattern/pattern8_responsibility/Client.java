@@ -1,7 +1,5 @@
 package com.java.designpattern.pattern8_responsibility;
 
-import com.java.designpattern.pattern7_state.AirController;
-
 public class Client {
 
     public static void main(String[] args) {

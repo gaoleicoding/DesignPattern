@@ -1,6 +1,6 @@
 package com.java.designpattern.pattern4_factory_method;
 
-class OptionerFactory2 {
+class CalculatorFactory {
     static <T extends Operation> T creatOperation(Class<T> clz) {
         T operation = null;
         try {

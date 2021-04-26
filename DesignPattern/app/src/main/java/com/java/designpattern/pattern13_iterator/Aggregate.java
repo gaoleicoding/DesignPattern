@@ -1,9 +1,10 @@
 package com.java.designpattern.pattern13_iterator;
 
 //抽象聚合
-interface Aggregate
-{ 
-    public void add(Object obj); 
-    public void remove(Object obj); 
-    public Iterator getIterator(); 
+interface Aggregate {
+    void add(Object obj);
+
+    void remove(Object obj);
+
+    Iterator iterator();
 }

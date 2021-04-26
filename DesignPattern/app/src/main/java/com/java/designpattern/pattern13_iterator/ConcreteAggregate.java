@@ -15,7 +15,7 @@ class ConcreteAggregate implements Aggregate
     { 
         list.remove(obj); 
     }
-    public Iterator getIterator()
+    public Iterator iterator()
     { 
         return(new ConcreteIterator(list)); 
     }     

@@ -12,15 +12,8 @@ class ConcreteIterator implements Iterator
         this.list=list; 
     } 
     public boolean hasNext()
-    { 
-        if(index<list.size()-1)
-        { 
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+    {
+        return index < list.size() - 1;
     }
     public Object first()
     {
