@@ -1,21 +1,24 @@
 package com.java.designpattern.pattern2_builder;
 
-import com.java.designpattern.pattern1_singleton.SingletonInnerClass;
-
 import java.io.IOException;
 
-public class Client {
+public class Client implements Cloneable {
+
+    final int pingInterval;
+
+    public Client(int pingInterval) {
+        this.pingInterval = pingInterval;
+    }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Computer computer = new Computer.Builder()
-                .setCpu("Intel Core i7")
-                .setMotherboard("GIGABYTE Z97")
-                .setDisplayCard("GTX Titan")
-                .setRam("32G")
-                .setDisk("2TB")
-                .setPower("1000W")
-                .create();
 
-        System.out.println("computer：" + computer.toString());
+        Product product = new Product.Builder()
+                .id(10)
+                .name("phone")
+                .price(100)
+                .type(1)
+                .build();
+        System.out.println("product：" + product.toString());
     }
+
 }

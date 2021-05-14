@@ -2,9 +2,6 @@ package com.java.designpattern.pattern21_flyweight;
 
 /**
  * 棋子 具体实现类
- * @author 波波烤鸭
- * @email dengpbs@163.com
- *
  */
 class ConcreteChess implements ChessFlyWeight {
 

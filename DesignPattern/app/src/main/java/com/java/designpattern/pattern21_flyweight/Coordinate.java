@@ -2,9 +2,6 @@ package com.java.designpattern.pattern21_flyweight;
 
 /**
  * 外部状态UnSharedConcreteFlyWeight
- * @author 波波烤鸭
- * @email dengpbs@163.com
- *
  */
 public class Coordinate {
 	private int x,y;

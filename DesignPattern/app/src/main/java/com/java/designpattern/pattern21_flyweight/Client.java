@@ -1,6 +1,7 @@
 package com.java.designpattern.pattern21_flyweight;
 
 public class Client {
+
 	public static void main(String[] args) {
 		ChessFlyWeight chess1 = ChessFlyWeightFactory.getChess("黑色");
 		ChessFlyWeight chess2 = ChessFlyWeightFactory.getChess("黑色");
