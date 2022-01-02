@@ -12,8 +12,8 @@ public class Client {
         manager.addUser(c);
         manager.addUser(d);
 
-        manager.setMessage(a,b,"你好");
-        manager.setMessage(d,a,"干嘛呢？");
-        manager.setAllMessage(a,"大家上班啦！");
+        manager.setMessage(a, b, "你好");
+        manager.setMessage(d, a, "干嘛呢？");
+        manager.setAllMessage(a, "大家上班啦！");
     }
 }

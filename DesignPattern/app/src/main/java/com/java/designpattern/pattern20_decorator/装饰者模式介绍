@@ -9,11 +9,11 @@
 但是，在另一方面，使用装饰模式会产生比使用继承关系更多的对象。更多的对象会使得查错变得困难，
 特别是这些对象看上去都很相像。
 
-装饰者模式在Java IO流中的应用
-装饰者模式在Java语言中的最著名的应用莫过于Java I/O标准库的设计了。
-由于Java I/O库需要很多性能的各种组合，如果这些性能都是用继承的方法实现的，那么每一种组合都需要一个类，
-这样就会造成大量性能重复的类出现。而如果采用装饰者模式，那么类的数目就会大大减少，性能的重复也可以减至最少。
-因此装饰者模式是Java I/O库的基本模式。
+装饰者模式在JDK中的运用
+Java当中的IO是运用了装饰者模式的最典型的例子。
+下面是一个简单的例子，通过BufferedReader对象来装饰InputStreamReader对象：
+//System.in is an InputStream object
+BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
 
 装饰模式和代理模式很像，它们的区别：

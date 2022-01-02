@@ -1,11 +1,5 @@
 package com.java.designpattern.pattern21_flyweight2;
 
-import android.util.Log;
-
-import com.java.designpattern.pattern21_flyweight.ChessFlyWeight;
-import com.java.designpattern.pattern21_flyweight.ChessFlyWeightFactory;
-import com.java.designpattern.pattern21_flyweight.Coordinate;
-
 public class Client {
 
     public static void main(String[] args) {
